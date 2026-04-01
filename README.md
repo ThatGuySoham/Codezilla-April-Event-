@@ -2,8 +2,6 @@
 
 Welcome to the official repository for the Codezilla tech club's upcoming event!
 
-This project acts as an open-source template. The boilerplate, file structure, and navigation bar are already set up. First-year B.Tech students participating in the event will clone this repository, read the comments in `index.html`, and implement the UI sections to complete the landing page.
-
 ## Tech Stack
 - **HTML5**: semantic structure
 - **Tailwind CSS (via CDN)**: modern utility-first CSS styling
@@ -19,7 +17,7 @@ This project acts as an open-source template. The boilerplate, file structure, a
 
 ## How to Contribute (Beginner's Guide)
 
-We use a standard Open Source contribution flow (Fork & Pull model). Please follow these steps carefully to submit your code:
+We use a standard Open Source contribution flow (Fork & Pull model). Follow these steps to submit your code:
 
 ### 1. Fork the Repository
 Click the **"Fork"** button at the top right of this repository page to create a copy of the repository in your personal GitHub account.
@@ -43,7 +41,7 @@ Open `index.html` in your favorite editor (like VS Code). Look for the `<!-- STU
 *Tip: You can view your changes by simply opening `index.html` in your web browser!*
 
 ### 5. Commit Your Changes
-Once you are happy with your work, stage and commit the files:
+Once you are ready to submit your work, stage and commit the files:
 ```bash
 git add .
 git commit -m "feat: added my UI implementations for the sections"
@@ -56,4 +54,4 @@ git push origin feature-my-name
 ```
 
 ### 7. Open a Pull Request
-Go to the original repository on GitHub, and you'll see a prompt to **"Compare & pull request"**. Click it, write a brief description of what you did, and submit it for our core team to review!
+Go to the original repository on GitHub, and you'll see a prompt to **"Compare & pull request"**. Click it, write a brief description of what you did, and submit it for review!
