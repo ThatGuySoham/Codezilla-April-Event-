@@ -1,0 +1,7 @@
+/* Custom Styles for Codezilla Website */
+/* Most styling is handled via Tailwind CSS utility classes in index.html. */
+/* You can add custom vanilla CSS rules here if needed. */
+
+html {
+    scroll-behavior: smooth;
+}

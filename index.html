@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codezilla | AI Web Dev Workshop & Competition</title>
+    <!-- Tailwind CSS (via CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white shadow-md border-b border-gray-200">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <!-- Logo area -->
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0 flex items-center">
+                        <span
+                            class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">Codezilla</span>
+                    </a>
+                </div>
+
+                <!-- Desktop menu -->
+                <div class="hidden md:ml-6 md:flex md:space-x-8 md:items-center">
+                    <a href="#about"
+                        class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                    <a href="#timeline"
+                        class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Timeline</a>
+                    <a href="#faq"
+                        class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">FAQ</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+                        aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Icon when menu is closed -->
+                        <svg class="block h-6 w-6" id="menu-icon-closed" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <!-- Icon when menu is open -->
+                        <svg class="hidden h-6 w-6" id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile menu dropdown -->
+        <div class="hidden md:hidden bg-white border-t border-gray-200" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 shadow-lg">
+                <a href="#about"
+                    class="mobile-link text-gray-700 hover:text-blue-600 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#timeline"
+                    class="mobile-link text-gray-700 hover:text-blue-600 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium">Timeline</a>
+                <a href="#faq"
+                    class="mobile-link text-gray-700 hover:text-blue-600 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium">FAQ</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Skeletons -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-24">
+
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-[50vh] flex flex-col items-center justify-center text-center">
+            <h2 class="text-xs uppercase tracking-widest text-gray-500 mb-4">[Hero Section Placeholder]</h2>
+            <!-- 
+                STUDENT TASK: BUILD THE HERO SECTION
+                1. Add a large, bold `<h1>` headline representing the event (e.g., "Codezilla AI Web Dev Workshop").
+                2. Add a styled `<p>` tag indicating the event dates.
+                3. Create a "Register Now" CTA (Call to Action) button using an `<a>` tag.
+                4. Use Tailwind utilities to style the text size, colors, padding, and hover effects for the button.
+            -->
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-12 border-t border-gray-200">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-8 sm:text-center">[About Section Placeholder]</h2>
+            <!-- 
+                STUDENT TASK: BUILD THE ABOUT SECTION
+                1. Create a container for a two-column layout using flexbox (`flex flex-col md:flex-row`) or CSS Grid (`grid grid-cols-1 md:grid-cols-2`).
+                2. In the first column, add a sub-heading and paragraph explaining the "Workshop Phase".
+                3. In the second column, add a sub-heading and paragraph explaining the "Website Building Competition Phase".
+                4. Ensure spacing and text styling are consistent.
+            -->
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="py-12 border-t border-gray-200">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-8 sm:text-center">[Timeline Section Placeholder]</h2>
+            <!-- 
+                STUDENT TASK: BUILD THE EVENT TIMELINE
+                1. Design an event schedule using either a multi-column CSS grid or a vertical timeline structure.
+                2. For each timeline event, include the Time, Event Name, and a short description.
+                3. Give each timeline entry a card-like appearance (`bg-white rounded-lg shadow p-6`).
+            -->
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-12 border-t border-gray-200">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-8 sm:text-center">[FAQ Section Placeholder]</h2>
+            <!-- 
+                STUDENT TASK: BUILD THE FAQ SECTION
+                1. Implement an accordion-style FAQ list. You can use standard `<details>` and `<summary>` HTML tags for an easy vanilla implementation without JS.
+                2. Provide at least 3 common questions (e.g., "Who can participate?", "Is there a fee?").
+                3. Style the `<summary>` to look like clickable rows with borders or backgrounds.
+            -->
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="bg-gray-900 text-white py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-xs uppercase tracking-widest text-gray-400 mb-4 text-center">[Footer Section Placeholder]
+            </h2>
+            <!-- 
+                STUDENT TASK: BUILD THE FOOTER
+                1. Add the club logo/text and copyright information.
+                2. Create a row of social media icons (GitHub, LinkedIn, Twitter/X) pointing to club profiles.
+                3. Use flexbox to center the content or layout multiple columns (e.g., quick links on the left, social icons on the right).
+            -->
+        </div>
+    </footer>
+
+    <!-- Vanilla Javascript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
